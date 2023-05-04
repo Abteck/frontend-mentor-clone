@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;1,300&family=Barlow:ital,wght@0,200;0,300;0,400;0,500;1,500&family=Heebo:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer utilities {
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 
+               [&>div::after]:translate-y-0  [&>div::after]:-rotate-45 
+               [&>div]:bg-transparent 
+    }
+}
+
